@@ -15,7 +15,10 @@ import java.io.InputStream;
 
 public class EventDetailsActivity extends AppCompatActivity {
 
-
+    /**
+     * creates the activity EventDetailsActivity
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,7 +50,11 @@ public class EventDetailsActivity extends AppCompatActivity {
         }
     }
 
-    public void goBackToList(View v){
+    /**
+     * terminates the current activity (EventDetailsActivity)
+     * @param v the current view
+     */
+    protected void goBackToList(View v){
         // terminates current activity
         finish();
     }

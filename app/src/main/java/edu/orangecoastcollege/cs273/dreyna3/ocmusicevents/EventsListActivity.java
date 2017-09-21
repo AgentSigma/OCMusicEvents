@@ -9,6 +9,10 @@ import android.widget.ListView;
 
 public class EventsListActivity extends ListActivity {
 
+    /**
+     * creates the activity EventsListActivity
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +26,13 @@ public class EventsListActivity extends ListActivity {
 
     }
 
+    /**
+     * Handles button event from the activity_events_list
+     * @param l
+     * @param v
+     * @param position the list item's index
+     * @param id
+     */
     @Override
     protected void onListItemClick(ListView l, View v, int position, long id) {
         //Use the position in the list to look up in the titles array
